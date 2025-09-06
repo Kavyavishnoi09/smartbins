@@ -9,6 +9,11 @@ import Dashboard from './pages/Dashboard';
 import MapView from './pages/MapView';
 import Analytics from './pages/Analytics';
 import MyRoutes from './pages/MyRoutes';
+import Bins from './pages/Bins';
+import Drivers from './pages/Drivers';
+import RoutesPage from './pages/Routes';
+import Settings from './pages/Settings';
+
 
 const PrivateRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { user, isLoading } = useAuth();
@@ -41,6 +46,11 @@ const AppRoutes: React.FC = () => {
         <Route path="map" element={<MapView />} />
         <Route path="analytics" element={<Analytics />} />
         <Route path="my-routes" element={<MyRoutes />} />
+        <Route path="bins" element={<Bins />} />
+<Route path="drivers" element={<Drivers />} />
+<Route path="routes" element={<RoutesPage />} />
+<Route path="settings" element={<Settings />} />
+
       </Route>
     </Routes>
   );

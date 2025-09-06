@@ -18,6 +18,7 @@ interface SidebarProps {
   isCollapsed: boolean;
 }
 
+
 const Sidebar: React.FC<SidebarProps> = ({ isCollapsed }) => {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
